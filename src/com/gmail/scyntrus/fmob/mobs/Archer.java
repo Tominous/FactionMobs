@@ -107,7 +107,7 @@ public class Archer extends EntitySkeleton implements FactionMob {
 
         this.goalSelector.a(1, new PathfinderGoalFloat(this));
         this.goalSelector.a(2, new PathfinderGoalBowShoot<>(this, 1.0, 20, 16.0F));
-        //this.goalSelector.a(3, new PathfinderGoalMoveTowardsTarget(this, 1.0, (float) range));
+        this.goalSelector.a(3, new PathfinderGoalMoveTowardsTarget(this, 1.0, (float) range));
         this.goalSelector.a(4, new PathfinderGoalFmobCommand(this));
         this.goalSelector.a(5, new PathfinderGoalRandomStroll(this, 1.0));
         this.goalSelector.a(6, new PathfinderGoalLookAtPlayer(this, EntityHuman.class, 8.0F));
